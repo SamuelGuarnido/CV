@@ -1,0 +1,189 @@
+<div class="back-pres"></div>
+<div class="presentation">
+  <div class="me-img">
+    <img src="photos/fotoMiaOrla.jpg" alt="Foto de Samuel Guarnido" />
+  </div>
+  <div class="div-name">
+    <div class="name">Samuel Guarnido</div>
+    <br>
+    <div class="charge">Programador Junior / Desarrollador Multiplataformas</div>
+  </div>
+</div>
+
+
+
+<mat-accordion>
+
+  <!--About me-->
+  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+    <mat-expansion-panel-header>
+      <mat-panel-title> Sobre mí </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class = "div-text">
+      <p>
+        Soy un Técnico Superior en Desarrollo de Aplicaciones con una sólida formación y experiencia en Java, Angular, Spring Framework y SQL.
+        <br>
+        Disfruto trabajar en equipo y contribuir a proyectos de desarrollo.
+        <br>
+        Me encanta crear aplicaciones y plantear toda la logica que conllevan.
+      </p>
+    </div>
+  </mat-expansion-panel>
+
+  <!--Skills-->
+  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+    <mat-expansion-panel-header>
+      <mat-panel-title> Skills </mat-panel-title>
+      <mat-panel-description>
+
+        <div class="icon-wrapper">
+          <img src="icons/angular-icon.png" alt="Icono Angular" class="icon" />
+          <img src="icons/java-icon.png" alt="Icono Java" class="icon" />
+          <img src="icons/spring-icon.png" alt="Icono Spring" class="icon" />
+          <img src="icons/sql-icon.svg" alt="Icono SQL" class="icon" />
+        </div>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class = "div-text">
+      <p>
+        Gracias a mis estudios y trabajo anteriores he desarrollado conocimientos en:<br>
+        -Java<br>
+        -Angular<br>
+        -Spring<br>
+        -SQL
+      </p>
+    </div>
+  </mat-expansion-panel>
+
+  <!--Laboral EXP-->
+  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+    <mat-expansion-panel-header>
+      <mat-panel-title> Experiencia laboral </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class = "div-text">
+      <mat-card>
+        <mat-card-header>
+          Ayesa | 2022 - 2024
+        </mat-card-header>
+        <mat-card-content>
+          Durante mi estadía en Ayesa trabajé con:<br>
+          -Java<br>
+          -Spring<br>
+          -Sonarlint y Sonarqube<br>
+          -SQL
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </mat-expansion-panel>
+
+  <!--Studies-->
+  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+    <mat-expansion-panel-header>
+      <mat-panel-title> Estudios </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class ="div-text">
+      <div class = "studies">
+        DAM | Cantillana | 2022 - 2024
+        <br>
+        Bach. Científico | Villaverde del Río | 2020 - 2022
+      </div>
+    </div>
+  </mat-expansion-panel>
+
+  <!--Courses-->
+  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+    <mat-expansion-panel-header>
+      <mat-panel-title> Cursos </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class ="div-text">
+      Curso de desarrollo de una API REST con Spring Boot<br>
+      Curso de Spring Core 5<br>
+      Curso de MongoDB: Creación y gestión de bases de datos NoSQL<br>
+      Crea y gestiona bases de datos con MongoDB<br>
+
+      <div class ="op-link">
+        <a href="https://openwebinars.net/@LVywMazx/" target="_blank">Certificados en Open Webinars</a>
+      </div>
+    </div>
+  </mat-expansion-panel>
+
+  <!--Contact-->
+  <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+    <mat-expansion-panel-header>
+      <mat-panel-title> Contacto </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class ="div-text">
+      <div class = "contact-div">
+
+        <i class="material-icons">call</i>
+        <span id="phone" class="copy-phone" (click)="copyPhoneToClipboard()">+34 633 80 95 44</span>
+        <span id="copy-phone-feedback" class="feedback-message">Copiado</span>
+
+      </div>
+      <div class = "contact-div">
+        <i class="material-icons">mail</i>
+        <span id="email" class="copy-email" (click)="copyEmailToClipboard()">samuelguarnido4&#64;gmail.com</span>
+        <span id="copy-feedback" class="feedback-message">Copiado</span>
+
+      </div>
+      <div class = "contact-div">
+        <img src="icons/linkedin-icon.svg" alt="Icono LinkeIn" class="icon" />
+        <a href="https://www.linkedin.com/in/samuel-miguel-guarnido-a8132b273/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </mat-expansion-panel>
+
+</mat-accordion>
+
+<!--
+<div class = "text-divs">
+  <h1>
+    Sobre mi
+  </h1>
+
+  <div class = "about-me">
+    <p>
+      Soy un Técnico Superior en Desarrollo de Aplicaciones con una sólida formación y experiencia en Java, Angular, Spring Framework y SQL.
+      <br>
+      Disfruto trabajar en equipo y contribuir a proyectos de desarrollo.
+      <br>
+      Me encanta crear aplicaciones y plantear toda la logica que conllevan.
+    </p>
+  </div>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class = "text-divs">
+  <h1>
+    Skills
+  </h1>
+  <div class = "skills">
+    <p>
+      skill
+    </p>
+  </div>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class = "text-divs">
+  <h1>
+    Estudios
+  </h1>
+  <div class = "studies">
+    <p>
+      Estudiosakosdnsa´dknsadòia
+      <br>
+      sàoidasdoasi
+      <br>
+      ´pdskljfds
+    </p>
+  </div>
+</div>
+
+<mat-divider></mat-divider>
+-->

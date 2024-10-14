@@ -1,0 +1,156 @@
+.back-pres {
+  position: absolute; /* Posiciona el cuadrado en relación a su contenedor */
+  top: 50%; /* Alinea el cuadro a la mitad del contenedor */
+  left: 0; /* Alinea a la izquierda */
+  width: 100%; /* Asegura que el cuadrado cubra todo el ancho del contenedor */
+  height: calc(100% - 70%); /* Calcula la altura restante desde la mitad hacia abajo */
+  background-color: #b1b1b1; /* Color bg cuadrado */
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
+  opacity: 0.8; /* Ajusta la opacidad si lo deseas */
+  transform: translateY(-90%); /* Mueve el cuadro hacia arriba para centrarlo */
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", serif;
+  position: relative; /* Permite que el fondo se posicione correctamente */
+  margin-bottom: 10vh;
+
+  .div-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    color: #2c3e50;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .charge {
+    color: #5f6969;
+  }
+}
+
+.me-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  overflow: hidden;
+  width: 150px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 2vh;
+  margin-bottom: 6vh;
+}
+
+.me-img img {
+  width: 100%;
+  height: auto;
+}
+
+.work-exp-div {
+  mat-card-header {
+  }
+}
+
+.text-divs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Afacad Flux", sans-serif;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+
+  h1 {
+    color: #3498db;
+    font-weight: bold;
+  }
+
+  .about-me {
+    width: 80%;
+  }
+
+  .studies {
+    width: 80%;
+  }
+}
+
+.div-text {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 2vh;
+  text-align: justify;
+
+  mat-card-header {
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+  }
+
+  .studies{
+    font-size: 2.2vh;
+  }
+
+  .op-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+
+  .contact-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente los íconos con el texto */
+    gap: 10px; /* Espacio entre íconos y texto */
+    margin-top: 1vh;
+
+    .icon {
+      width: 25px;
+      height: 25px;
+      margin: 0px;
+    }
+
+    .copy-phone, .copy-email {
+      color: #3498DB; /* Color del enlace */
+      text-decoration: underline; /* Subrayado para parecer un enlace */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+      margin-left: 5px; /* Espacio entre el icono y el enlace */
+    }
+
+    .feedback-message {
+      display: none;
+      color: green;
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+.skills-text {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 2vh;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+

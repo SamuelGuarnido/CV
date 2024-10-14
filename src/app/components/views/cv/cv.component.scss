@@ -63,6 +63,7 @@
 .portfolio{
   display: flex;
   flex-direction: column;
+  width: 40vh;
 
   button{
     display: flex;
@@ -72,7 +73,7 @@
     margin-bottom: 1vh;
 
     background-color: #edf4fb;
-    width: 100%;
+    width: auto;
     color: #5893c4;
     gap: 4vh;
     border-radius: 8px;
