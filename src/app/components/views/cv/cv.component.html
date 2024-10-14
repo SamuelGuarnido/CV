@@ -1,0 +1,105 @@
+<div [@pageAnimation]>
+  <div class="presentation">
+    <div class="me-img">
+      <img src="/My_CVs/photos/fotoMiaOrla.jpg" alt="Foto de Samuel Guarnido" />
+    </div>
+    <div class ="div-name">
+      <div class="name">
+        Samuel Guarnido
+      </div>
+      <br>
+      <div class="charge">
+        Programador Junior / Desarrollador Multiplataformas
+      </div>
+    </div>
+  </div>
+
+  <div class = "cv-container">
+    <div class="first-row">
+      <mat-card>
+        <mat-card-content class="portfolio">
+          <div class="header-port">
+            Portfolio
+          </div>
+          <hr />
+          <button mat-button (click)="changeSection('aboutMe')">
+            <i class="material-icons">menu_book</i>
+            Sobre mí
+          </button>
+
+          <button mat-button (click)="changeSection('studies')">
+            <i class="material-icons">school</i>
+            Estudios
+          </button>
+
+          <button mat-button (click)="changeSection('courses')">
+            <i class="material-icons">book</i>
+            Cursos
+          </button>
+
+          <button mat-button (click)="changeSection('contact')">
+            <i class="material-icons">call</i>
+            Contacto
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class ="second-row">
+      <!-- Sección que cambia según la sección actual -->
+      <div *ngIf="currentSection === 'aboutMe'" [@cardAnimation]>
+        <mat-card>
+          <mat-card-content>
+            <div class="header-in">
+              Sobre mí
+            </div>
+            <mat-divider></mat-divider>
+            Soy un Técnico Superior en Desarrollo de Aplicaciones con una sólida formación y experiencia en Java, Angular, Spring Framework y SQL.
+            <br>
+            Disfruto trabajar en equipo y contribuir a proyectos de desarrollo.
+            <br>
+            Me encanta crear aplicaciones y platear toda la logica que conllevan.
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div *ngIf="currentSection === 'studies'" [@cardAnimation]>
+        <mat-card>
+          <mat-card-content>
+            <div class="header-in">
+              Estudios
+            </div>
+            <mat-divider></mat-divider>
+            Estudios
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div *ngIf="currentSection === 'courses'" [@cardAnimation]>
+        <mat-card>
+          <mat-card-content>
+            <div class="header-in">
+              Cursos
+            </div>
+            <mat-divider></mat-divider>
+            Cursos
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div *ngIf="currentSection === 'contact'" [@cardAnimation]>
+        <mat-card>
+          <mat-card-content>
+            <div class="header-in">
+              Contacto
+            </div>
+            <mat-divider></mat-divider>
+            Contacto
+          </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class = "third-row"></div>
+  </div>
+
+</div>

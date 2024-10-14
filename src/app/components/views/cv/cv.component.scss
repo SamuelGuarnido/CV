@@ -1,0 +1,134 @@
+.presentation{
+
+  display: flex;
+  flex-direction: row;
+
+  font-family: "Karla", serif;
+  margin-left: 10.5vh;
+  margin-top: 8vh;
+  margin-bottom: 7vh;
+  .name{
+    color: #183c5a;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .charge{
+    color:rgb(128, 128, 128);
+  }
+
+  .div-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.5vh;
+    margin-top: 8vh;
+  }
+}
+
+.me-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  overflow: hidden;
+  width: 150px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.me-img img {
+  width: 100%;
+  height: auto;
+}
+
+.cv-container{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: start;
+  align-items: start;
+
+  height: 80vh;
+  max-height: 150vh;
+}
+
+.first-row{
+  display: flex;
+  flex-direction: column;
+
+  width: 30vh;
+
+  margin-left: 8vh;
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+
+  button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 1vh;
+
+    background-color: #edf4fb;
+    width: 100%;
+    color: #5893c4;
+    gap: 4vh;
+    border-radius: 8px;
+    border: 1px solid white;
+
+  }
+
+  .header-port{
+    margin-top: 0vh;
+    color: #5dc6cd;
+    font-size: larger;
+    font-weight: bold;
+  }
+}
+
+.second-row {
+  display: flex;
+  flex-direction: column; /* Cambiado de row a column para alinear los cards verticalmente */
+
+  justify-content: flex-start;
+  align-items: flex-start; /* Alinear el contenido al final (derecha) */
+
+  margin-left: 20vh;
+  width: 60vh;
+
+  text-align: start;
+
+  font-size: 2vh;
+  font-family: "Afacad Flux", sans-serif;
+
+  mat-card{
+    &:hover {
+
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .header-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    font-size: x-large;
+    color: #183c5a;
+    font-weight: bold;
+  }
+
+  mat-divider {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  mat-card {
+    align-self: flex-start; /* Asegúrate de que el mat-card se alinee en la parte superior */
+    margin-top: 0; /* Puedes ajustar esto si quieres más espacio desde el borde */
+    margin-right: 0; /* Asegúrate de que esté en la esquina superior derecha */
+  }
+}
+
